@@ -99,9 +99,11 @@
 		299D7261284E1FC500E31073 /* RoleMaker */ = {
 			isa = PBXGroup;
 			children = (
+				299D7294284E202B00E31073 /* Model */,
+				299D7293284E202100E31073 /* Controller */,
+				299D7292284E201B00E31073 /* View */,
 				299D7262284E1FC500E31073 /* AppDelegate.swift */,
 				299D7264284E1FC500E31073 /* SceneDelegate.swift */,
-				299D7266284E1FC500E31073 /* ViewController.swift */,
 				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726B284E1FC600E31073 /* Assets.xcassets */,
 				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
@@ -125,6 +127,28 @@
 				299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */,
 			);
 			path = RoleMakerUITests;
+			sourceTree = "<group>";
+		};
+		299D7292284E201B00E31073 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		299D7293284E202100E31073 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				299D7266284E1FC500E31073 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		299D7294284E202B00E31073 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
