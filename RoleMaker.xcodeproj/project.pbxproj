@@ -16,6 +16,8 @@
 		299D727A284E1FC600E31073 /* RoleMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7279284E1FC600E31073 /* RoleMakerTests.swift */; };
 		299D7284284E1FC600E31073 /* RoleMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7283284E1FC600E31073 /* RoleMakerUITests.swift */; };
 		299D7286284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */; };
+		29D0F6042850D7C500AF8377 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6032850D7C500AF8377 /* Place.swift */; };
+		29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6052850E54600AF8377 /* PlacePhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		299D727F284E1FC600E31073 /* RoleMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoleMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299D7283284E1FC600E31073 /* RoleMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleMakerUITests.swift; sourceTree = "<group>"; };
 		299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleMakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29D0F6032850D7C500AF8377 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		29D0F6052850E54600AF8377 /* PlacePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhoto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 		299D7294284E202B00E31073 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				29D0F6032850D7C500AF8377 /* Place.swift */,
+				29D0F6052850E54600AF8377 /* PlacePhoto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,7 +312,9 @@
 			files = (
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
 				299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */,
+				29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */,
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
+				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
