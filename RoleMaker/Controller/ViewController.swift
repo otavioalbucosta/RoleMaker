@@ -7,13 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    let localizacoes = ["Localizaçao 1", "Localização principal", "Localizaçao 3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return localizacoes.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let localizacao = localizacoes[indexPath.row]
+        celula.textLabel?.text = localizacao
+        return celula
+    }
 }
-
