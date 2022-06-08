@@ -10,6 +10,6 @@ import Foundation
 struct PlacePhoto: Codable {
     let height: Int
     let width: Int
-    let photo_reference: String
-    let html_attributions: String
+//    let photo_reference: String
+//    let html_attributions: String
 }
