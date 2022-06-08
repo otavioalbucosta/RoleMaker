@@ -104,9 +104,7 @@
 				299D7292284E201B00E31073 /* View */,
 				299D7262284E1FC500E31073 /* AppDelegate.swift */,
 				299D7264284E1FC500E31073 /* SceneDelegate.swift */,
-				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726B284E1FC600E31073 /* Assets.xcassets */,
-				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 				299D7270284E1FC600E31073 /* Info.plist */,
 			);
 			path = RoleMaker;
@@ -132,6 +130,8 @@
 		299D7292284E201B00E31073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				299D7268284E1FC500E31073 /* Main.storyboard */,
+				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
