@@ -21,9 +21,17 @@ extension ViewController: UITableViewDataSource {
         return localizacoes.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
-        let localizacao = localizacoes[indexPath.row]
-        celula.textLabel?.text = localizacao
+//        let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
+        
+//        let localizacao = localizacoes[indexPath.row]
+//        celula.textLabel?.text = localizacao
+        let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
+            CardTableViewCell
+        
+        celula.nomeLocal.text=localizacoes[indexPath.row]
+        celula.horario.text=localizacoes[indexPath.row]
+        celula.nomeEndereco.text=localizacoes[indexPath.row]
+//        celula.nomeImagem.image=localizacoes[indexPath.row]
         return celula
     }
 }
