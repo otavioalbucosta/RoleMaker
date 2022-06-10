@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.rowHeight = 110
+        
+        tableView.backgroundColor = UIColor.white
+        tableView.separatorStyle = .none
+//        tableView.selectionStyle = .none
+    
+        
+
     }
 }
 
@@ -31,7 +39,13 @@ extension ViewController: UITableViewDataSource {
         celula.nomeLocal.text=localizacoes[indexPath.row]
         celula.horario.text=localizacoes[indexPath.row]
         celula.nomeEndereco.text=localizacoes[indexPath.row]
+        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        celula.selectionStyle = .none
 //        celula.nomeImagem.image=localizacoes[indexPath.row]
         return celula
     }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 110.0
+//    }
 }

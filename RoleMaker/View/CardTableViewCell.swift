@@ -16,7 +16,9 @@ class CardTableViewCell: UITableViewCell {
         card.clipsToBounds = false
         card.layer.cornerRadius = 15
         card.backgroundColor = UIColor.white
-        self.backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1.0)
+      
+        card.backgroundColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1.0)
+//        self.backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1.0)
     }
     @IBOutlet weak var nomeLocal: UILabel!
     

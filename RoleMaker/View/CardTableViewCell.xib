@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,9 +53,10 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" name="AccentColor"/>
                 <constraints>
+                    <constraint firstItem="qJG-gw-3Lj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="hkc-uZ-Up5"/>
                     <constraint firstItem="qJG-gw-3Lj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lH5-1J-Gng"/>
-                    <constraint firstItem="qJG-gw-3Lj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="y5e-EY-jBX"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -65,7 +67,12 @@
                 <outlet property="nomeImagem" destination="mqj-5x-QYZ" id="9Pu-3j-qmx"/>
                 <outlet property="nomeLocal" destination="UiN-eC-4Pf" id="WeP-Ne-Cx6"/>
             </connections>
-            <point key="canvasLocation" x="154.34782608695653" y="97.767857142857139"/>
+            <point key="canvasLocation" x="160" y="88"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
