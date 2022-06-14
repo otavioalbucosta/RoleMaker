@@ -18,6 +18,8 @@
 		299D7286284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */; };
 		29D0F6042850D7C500AF8377 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6032850D7C500AF8377 /* Place.swift */; };
 		29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6052850E54600AF8377 /* PlacePhoto.swift */; };
+		DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FF12857D45900DE9403 /* SheetViewController.swift */; };
+		DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD176FF22857D45900DE9403 /* SheetViewController.xib */; };
 		DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */; };
 		DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleMakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29D0F6032850D7C500AF8377 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		29D0F6052850E54600AF8377 /* PlacePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhoto.swift; sourceTree = "<group>"; };
+		DD176FF12857D45900DE9403 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		DD176FF22857D45900DE9403 /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
 		DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,9 +142,9 @@
 		299D7292284E201B00E31073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD176FF22857D45900DE9403 /* SheetViewController.xib */,
 				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
-				DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */,
 				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
 			);
 			path = View;
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				299D7266284E1FC500E31073 /* ViewController.swift */,
+				DD176FF12857D45900DE9403 /* SheetViewController.swift */,
+				DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 				299D726F284E1FC600E31073 /* LaunchScreen.storyboard in Resources */,
 				299D726C284E1FC600E31073 /* Assets.xcassets in Resources */,
 				299D726A284E1FC500E31073 /* Main.storyboard in Resources */,
+				DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */,
 				DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +306,7 @@
 				DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */,
 				299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */,
 				29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */,
+				DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */,
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
 				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
 			);
