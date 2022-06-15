@@ -20,6 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         celula.horario.text=localizacoes[indexPath.row]
         celula.nomeEndereco.text=localizacoes[indexPath.row]
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        
+//        NSLayoutConstraint.activate([
+//            celula.botto
+//        ])
         return celula
     }
     
