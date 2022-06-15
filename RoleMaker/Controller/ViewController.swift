@@ -67,7 +67,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
 
-        tableView.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
         tableView.separatorStyle = .none
 //        tableView.selectionStyle = .none
      // MARK: Contraints e configuracoes do buttao

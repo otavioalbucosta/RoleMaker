@@ -15,9 +15,9 @@ class SheetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         
-        view.addSubview(sheetCard)
+        view.addSubview(sheetCard.view)
         label.text = "PinkSheet"
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
