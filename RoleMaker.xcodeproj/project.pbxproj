@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296319A7285A1CD700DD92FB /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296319A6285A1CD700DD92FB /* MapKitViewController.swift */; };
+		296319A9285A282100DD92FB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296319A8285A282100DD92FB /* LocationManager.swift */; };
+		297C95AC285BC99400F781A1 /* ChoosePlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C95AB285BC99400F781A1 /* ChoosePlaceTableViewCell.swift */; };
+		297C95AE285BC9EC00F781A1 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297C95AD285BC9EC00F781A1 /* MapView.xib */; };
 		299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7262284E1FC500E31073 /* AppDelegate.swift */; };
 		299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7264284E1FC500E31073 /* SceneDelegate.swift */; };
 		299D7267284E1FC500E31073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7266284E1FC500E31073 /* ViewController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296319A6285A1CD700DD92FB /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		296319A8285A282100DD92FB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		297C95AB285BC99400F781A1 /* ChoosePlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlaceTableViewCell.swift; sourceTree = "<group>"; };
+		297C95AD285BC9EC00F781A1 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		299D725F284E1FC500E31073 /* RoleMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoleMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299D7262284E1FC500E31073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		299D7264284E1FC500E31073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
+				297C95AD285BC9EC00F781A1 /* MapView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,8 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				299D7266284E1FC500E31073 /* ViewController.swift */,
+				296319A6285A1CD700DD92FB /* MapKitViewController.swift */,
 				DD176FF12857D45900DE9403 /* SheetViewController.swift */,
 				DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */,
+				297C95AB285BC99400F781A1 /* ChoosePlaceTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +176,7 @@
 			children = (
 				29D0F6032850D7C500AF8377 /* Place.swift */,
 				29D0F6052850E54600AF8377 /* PlacePhoto.swift */,
+				296319A8285A282100DD92FB /* LocationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +289,7 @@
 				299D726F284E1FC600E31073 /* LaunchScreen.storyboard in Resources */,
 				299D726C284E1FC600E31073 /* Assets.xcassets in Resources */,
 				299D726A284E1FC500E31073 /* Main.storyboard in Resources */,
+				297C95AE285BC9EC00F781A1 /* MapView.xib in Resources */,
 				DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */,
 				DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */,
 			);
@@ -314,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint NomeDoSeuProjeto/*\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint RoleMaker/*\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -325,10 +338,13 @@
 			files = (
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
 				DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */,
+				296319A7285A1CD700DD92FB /* MapKitViewController.swift in Sources */,
 				299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */,
 				29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */,
+				296319A9285A282100DD92FB /* LocationManager.swift in Sources */,
 				DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */,
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
+				297C95AC285BC99400F781A1 /* ChoosePlaceTableViewCell.swift in Sources */,
 				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
