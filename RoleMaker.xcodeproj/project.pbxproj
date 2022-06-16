@@ -16,6 +16,15 @@
 		299D727A284E1FC600E31073 /* RoleMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7279284E1FC600E31073 /* RoleMakerTests.swift */; };
 		299D7284284E1FC600E31073 /* RoleMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7283284E1FC600E31073 /* RoleMakerUITests.swift */; };
 		299D7286284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */; };
+		29D0F6042850D7C500AF8377 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6032850D7C500AF8377 /* Place.swift */; };
+		29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6052850E54600AF8377 /* PlacePhoto.swift */; };
+		DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FF12857D45900DE9403 /* SheetViewController.swift */; };
+		DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD176FF22857D45900DE9403 /* SheetViewController.xib */; };
+		DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */; };
+		DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */; };
+		E3E1DBBD285A1D38005D1E99 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */; };
+		E3E1DBBE285A1D38005D1E99 /* CardsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */; };
+		E3E1DBC0285A23E0005D1E99 /* CardUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1DBBF285A23E0005D1E99 /* CardUiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		299D727F284E1FC600E31073 /* RoleMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoleMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299D7283284E1FC600E31073 /* RoleMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleMakerUITests.swift; sourceTree = "<group>"; };
 		299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleMakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29D0F6032850D7C500AF8377 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		29D0F6052850E54600AF8377 /* PlacePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhoto.swift; sourceTree = "<group>"; };
+		DD176FF12857D45900DE9403 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		DD176FF22857D45900DE9403 /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
+		DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
+		E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsTableViewController.xib; sourceTree = "<group>"; };
+		E3E1DBBF285A23E0005D1E99 /* CardUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +122,7 @@
 				299D7292284E201B00E31073 /* View */,
 				299D7262284E1FC500E31073 /* AppDelegate.swift */,
 				299D7264284E1FC500E31073 /* SceneDelegate.swift */,
-				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726B284E1FC600E31073 /* Assets.xcassets */,
-				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 				299D7270284E1FC600E31073 /* Info.plist */,
 			);
 			path = RoleMaker;
@@ -132,6 +148,12 @@
 		299D7292284E201B00E31073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3E1DBBF285A23E0005D1E99 /* CardUiView.swift */,
+				DD176FF22857D45900DE9403 /* SheetViewController.xib */,
+				299D7268284E1FC500E31073 /* Main.storyboard */,
+				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
+				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
+				E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				299D7266284E1FC500E31073 /* ViewController.swift */,
+				DD176FF12857D45900DE9403 /* SheetViewController.swift */,
+				DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */,
+				E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +172,8 @@
 		299D7294284E202B00E31073 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				29D0F6032850D7C500AF8377 /* Place.swift */,
+				29D0F6052850E54600AF8377 /* PlacePhoto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,8 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				299D726F284E1FC600E31073 /* LaunchScreen.storyboard in Resources */,
+				E3E1DBBE285A1D38005D1E99 /* CardsTableViewController.xib in Resources */,
 				299D726C284E1FC600E31073 /* Assets.xcassets in Resources */,
 				299D726A284E1FC500E31073 /* Main.storyboard in Resources */,
+				DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */,
+				DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
+				DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */,
+				E3E1DBC0285A23E0005D1E99 /* CardUiView.swift in Sources */,
 				299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */,
+				29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */,
+				DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */,
+				E3E1DBBD285A1D38005D1E99 /* CardsTableViewController.swift in Sources */,
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
+				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +504,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,6 +532,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
