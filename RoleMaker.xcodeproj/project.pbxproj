@@ -26,6 +26,9 @@
 		DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD176FF22857D45900DE9403 /* SheetViewController.xib */; };
 		DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */; };
 		DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */; };
+		E3E1DBBD285A1D38005D1E99 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */; };
+		E3E1DBBE285A1D38005D1E99 /* CardsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */; };
+		E3E1DBC0285A23E0005D1E99 /* CardUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1DBBF285A23E0005D1E99 /* CardUiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		DD176FF22857D45900DE9403 /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
 		DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
+		E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsTableViewController.xib; sourceTree = "<group>"; };
+		E3E1DBBF285A23E0005D1E99 /* CardUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,11 +156,12 @@
 		299D7292284E201B00E31073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3E1DBBF285A23E0005D1E99 /* CardUiView.swift */,
 				DD176FF22857D45900DE9403 /* SheetViewController.xib */,
 				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
-				297C95AD285BC9EC00F781A1 /* MapView.xib */,
+				E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +173,7 @@
 				296319A6285A1CD700DD92FB /* MapKitViewController.swift */,
 				DD176FF12857D45900DE9403 /* SheetViewController.swift */,
 				DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */,
-				297C95AB285BC99400F781A1 /* ChoosePlaceTableViewCell.swift */,
+				E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,7 +198,6 @@
 				299D725B284E1FC500E31073 /* Sources */,
 				299D725C284E1FC500E31073 /* Frameworks */,
 				299D725D284E1FC500E31073 /* Resources */,
-				DD176FF52859F84800DE9403 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -287,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				299D726F284E1FC600E31073 /* LaunchScreen.storyboard in Resources */,
+				E3E1DBBE285A1D38005D1E99 /* CardsTableViewController.xib in Resources */,
 				299D726C284E1FC600E31073 /* Assets.xcassets in Resources */,
 				299D726A284E1FC500E31073 /* Main.storyboard in Resources */,
 				297C95AE285BC9EC00F781A1 /* MapView.xib in Resources */,
@@ -338,11 +345,12 @@
 			files = (
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
 				DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */,
-				296319A7285A1CD700DD92FB /* MapKitViewController.swift in Sources */,
+				E3E1DBC0285A23E0005D1E99 /* CardUiView.swift in Sources */,
 				299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */,
 				29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */,
 				296319A9285A282100DD92FB /* LocationManager.swift in Sources */,
 				DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */,
+				E3E1DBBD285A1D38005D1E99 /* CardsTableViewController.swift in Sources */,
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
 				297C95AC285BC99400F781A1 /* ChoosePlaceTableViewCell.swift in Sources */,
 				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
@@ -529,6 +537,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,6 +565,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,11 +9,15 @@ import UIKit
 
 class SheetViewController: UIViewController {
 
+    let sheetCard = CardsTableViewController()
     let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 150))
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+        
+        view.addSubview(sheetCard.view)
         label.text = "PinkSheet"
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
@@ -25,14 +29,5 @@ class SheetViewController: UIViewController {
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
