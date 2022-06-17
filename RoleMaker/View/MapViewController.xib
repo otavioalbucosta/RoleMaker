@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="RoleMaker" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController nibName="" id="px8-pe-AEc" customClass="MapKitViewController" customModule="RoleMaker" customModuleProvider="target">
-            <view key="view" contentMode="scaleToFill" id="puv-qD-Jx4">
+        <viewController id="Ajy-kk-pmm" customClass="MapKitViewController" customModule="RoleMaker" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="RWI-4v-eop">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <viewLayoutGuide key="safeArea" id="FXF-bl-o48"/>
+                <viewLayoutGuide key="safeArea" id="vTd-XK-yDw"/>
                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             </view>
-            <point key="canvasLocation" x="186" y="108"/>
+            <point key="canvasLocation" x="26" y="51"/>
         </viewController>
     </objects>
     <resources>
