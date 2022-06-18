@@ -19,6 +19,8 @@
 		299D7286284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */; };
 		299E2EC4285C139B00AE4CED /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E2EC2285C139B00AE4CED /* MapViewController.swift */; };
 		299E2EC5285C139B00AE4CED /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 299E2EC3285C139B00AE4CED /* MapViewController.xib */; };
+		299E2EC5285CF63F000D11D0 /* PlacesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E2EC4285CF63F000D11D0 /* PlacesAPIManager.swift */; };
+		299E2EC7285D636B000D11D0 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E2EC6285D636B000D11D0 /* PlaceAnnotation.swift */; };
 		29D0F6042850D7C500AF8377 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6032850D7C500AF8377 /* Place.swift */; };
 		29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6052850E54600AF8377 /* PlacePhoto.swift */; };
 		DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FF12857D45900DE9403 /* SheetViewController.swift */; };
@@ -64,6 +66,8 @@
 		299D7285284E1FC600E31073 /* RoleMakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleMakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		299E2EC2285C139B00AE4CED /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		299E2EC3285C139B00AE4CED /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		299E2EC4285CF63F000D11D0 /* PlacesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAPIManager.swift; sourceTree = "<group>"; };
+		299E2EC6285D636B000D11D0 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		29D0F6032850D7C500AF8377 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		29D0F6052850E54600AF8377 /* PlacePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhoto.swift; sourceTree = "<group>"; };
 		DD176FF12857D45900DE9403 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				29D0F6032850D7C500AF8377 /* Place.swift */,
 				29D0F6052850E54600AF8377 /* PlacePhoto.swift */,
 				296319A8285A282100DD92FB /* LocationManager.swift */,
+				299E2EC4285CF63F000D11D0 /* PlacesAPIManager.swift */,
+				299E2EC6285D636B000D11D0 /* PlaceAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,12 +340,14 @@
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
 				DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */,
 				E3E1DBC0285A23E0005D1E99 /* CardUiView.swift in Sources */,
+				299E2EC7285D636B000D11D0 /* PlaceAnnotation.swift in Sources */,
 				299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */,
 				29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */,
 				296319A9285A282100DD92FB /* LocationManager.swift in Sources */,
 				DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */,
 				E3E1DBBD285A1D38005D1E99 /* CardsTableViewController.swift in Sources */,
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
+				299E2EC5285CF63F000D11D0 /* PlacesAPIManager.swift in Sources */,
 				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

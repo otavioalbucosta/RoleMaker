@@ -12,6 +12,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     let manager = CLLocationManager()
     var completion: ((CLLocation) -> Void)?
+    static var currentLocation: CLLocation?
     
     public func getUserLocation(completion: @escaping ((CLLocation) -> Void)) {
         self.completion = completion
@@ -23,8 +24,13 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else {return}
+        LocationManager.currentLocation = location
         completion?(location)
         manager.stopUpdatingLocation()
     }
+    
+}
+
+class LocationManagerAnnotation {
     
 }

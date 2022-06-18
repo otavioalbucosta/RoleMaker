@@ -7,16 +7,22 @@
 
 import Foundation
 import UIKit
+import MapKit
+import CoreLocation
 
 struct Place: Codable {
-//    let place_id: String
+    let place_id: String
     let name: String
     let vicinity: String
-    let place: GeometryPlace
-//    let price_level: Int
+    let geometry: GeometryPlace
+   let price_level: Int?
     let rating: Double
     let types: [String]
-    let photo: PlacePhoto
+    let photos: [PlacePhoto]
+    
+    func toPlaceAnnotation() -> PlaceAnnotation {
+        return PlaceAnnotation(self.geometry.location.lat, self.geometry.location.lng, title: name, subtitle: vicinity)
+    }
 }
 
 struct GeometryPlace: Codable {

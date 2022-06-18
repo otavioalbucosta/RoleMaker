@@ -36,7 +36,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 sheet.prefersEdgeAttachedInCompactHeight = true
                 sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
             }
-        present(viewControllerToPresent, animated: true, completion: nil)
+        var mapKitController = MapKitViewController()
+        show(mapKitController,sender: self)
+//        present(viewControllerToPresent, animated: true, completion: nil)
     }
     
     let localizacoes = ["Localizaçao primeira", "Localização principal", "Localizaçao 3"]
