@@ -15,9 +15,18 @@ class CardsTableViewController: UITableViewController {
         tableView.dataSource = self
         tableView.rowHeight = 110
         
-        tableView.backgroundColor = UIColor.white
+        tableView.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         
+        tableView.separatorStyle = .none
         
+//        self.view.addSubview(tableView)
+//        tableView.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+//
+//        ])
+
     }
 
     // MARK: - Table view data source
@@ -38,10 +47,8 @@ class CardsTableViewController: UITableViewController {
         celula.horario.text=localizacoes[indexPath.row]
         celula.nomeEndereco.text=localizacoes[indexPath.row]
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
-        
-//        NSLayoutConstraint.activate([
-//            celula.botto
-//        ])
+        celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+
         return celula
     }
     

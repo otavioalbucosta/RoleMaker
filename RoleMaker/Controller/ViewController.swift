@@ -20,6 +20,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         celula.horario.text=localizacoes[indexPath.row]
         celula.nomeEndereco.text=localizacoes[indexPath.row]
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        celula.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
+        celula.selectionStyle = .none
         
 //        NSLayoutConstraint.activate([
 //            celula.botto
@@ -37,8 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
             }
         var mapKitController = MapKitViewController()
-        show(mapKitController,sender: self)
-//        present(viewControllerToPresent, animated: true, completion: nil)
+//        show(mapKitController,sender: self)
+        present(viewControllerToPresent, animated: true, completion: nil)
     }
     
     let localizacoes = ["Localizaçao primeira", "Localização principal", "Localizaçao 3"]
@@ -59,18 +61,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            }
 //            present(viewControllerToPresent, animated: true, completion: nil)
 //    }
+
+    @IBOutlet weak var titleNavigation: UINavigationItem!
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var labelHome1: UILabel!
+    @IBOutlet weak var cardHome: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 //
 //        view.addSubview(button)
+//        navigationBar.prefersLargeTitles = true
+            
+//        titleNavigation.largeTitleDisplayMode = .always
+//        titleNavigation.title = "Tedte"
+
+        titleNavigation.titleView?.tintColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         tableView.dataSource = self
         tableView.rowHeight = 110
+        tableView.fillerRowHeight = 5
 
         tableView.delegate = self
         tableView.dataSource = self
 
+        labelHome1.textColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+        cardHome.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
         view.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
+        tableView.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
         tableView.separatorStyle = .none
+        
 //        tableView.selectionStyle = .none
      // MARK: Contraints e configuracoes do buttao
 //        button.translatesAutoresizingMaskIntoConstraints = false

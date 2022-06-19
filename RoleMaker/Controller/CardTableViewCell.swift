@@ -16,6 +16,9 @@ class CardTableViewCell: UITableViewCell {
         card.clipsToBounds = false
         card.layer.cornerRadius = 15
         card.backgroundColor = UIColor.white
+        
+        
+        
 //        NSLayoutConstraint.activate([
 //
 //        ])
