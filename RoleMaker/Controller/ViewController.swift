@@ -45,37 +45,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let localizacoes = ["Localizaçao primeira", "Localização principal", "Localizaçao 3"]
     @IBOutlet weak var tableView: UITableView!
-//    let button = UIButton(type: .system)
-//    // MARK: Criando a funcao que vai ser chamada no #selector
-//    @objc func buttonAction(){
-////        let sheetViewController = SheetViewController(nibName: "SheetViewController", bundle: nil)
-////        present(sheetViewController, animated: true)
-//        // MARK: instanciando a middleSheet para ser chamado no preset() no final da func
-//        let viewControllerToPresent = SheetViewController()
-//            if let sheet = viewControllerToPresent.sheetPresentationController {
-//                sheet.detents = [.medium(), .large()]
-//                sheet.largestUndimmedDetentIdentifier = .medium
-//                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
-//                sheet.prefersEdgeAttachedInCompactHeight = true
-//                sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
-//            }
-//            present(viewControllerToPresent, animated: true, completion: nil)
-//    }
-
     @IBOutlet weak var titleNavigation: UINavigationItem!
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var labelHome1: UILabel!
     @IBOutlet weak var cardHome: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-//        view.addSubview(button)
-//        navigationBar.prefersLargeTitles = true
-            
-//        titleNavigation.largeTitleDisplayMode = .always
-//        titleNavigation.title = "Tedte"
 
-//        titleNavigation.titleView?.tintColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+        let standard = UINavigationBarAppearance()
+        navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        standard.configureWithOpaqueBackground()
+        standard.titleTextAttributes = [.foregroundColor: UIColor.white]
+        standard.largeTitleTextAttributes = [.foregroundColor: UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)]
+        standard.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
+
+        navigationItem.standardAppearance = standard
+        navigationItem.scrollEdgeAppearance = standard
+        navigationItem.compactAppearance = standard
+        
         tableView.dataSource = self
         tableView.rowHeight = 130
         tableView.fillerRowHeight = 5
