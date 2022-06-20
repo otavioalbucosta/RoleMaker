@@ -75,9 +75,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        titleNavigation.largeTitleDisplayMode = .always
 //        titleNavigation.title = "Tedte"
 
-        titleNavigation.titleView?.tintColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+//        titleNavigation.titleView?.tintColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         tableView.dataSource = self
-        tableView.rowHeight = 110
+        tableView.rowHeight = 130
         tableView.fillerRowHeight = 5
 
         tableView.delegate = self

@@ -17,13 +17,15 @@ class CardTableViewCell: UITableViewCell {
         card.layer.cornerRadius = 15
         card.backgroundColor = UIColor.white
         
+        card.translatesAutoresizingMaskIntoConstraints = false
         
+        card.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
+        card.heightAnchor.constraint(equalTo: heightAnchor, constant: -20).isActive = true
+        card.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        card.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         
-//        NSLayoutConstraint.activate([
-//
-//        ])
+
         card.backgroundColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1.0)
-//        self.backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1.0)
     }
     @IBOutlet weak var nomeLocal: UILabel!
     @IBOutlet weak var horario: UILabel!
@@ -33,8 +35,7 @@ class CardTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
        
-        
-        
+
     }
     
 }

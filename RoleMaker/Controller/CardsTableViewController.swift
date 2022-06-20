@@ -13,7 +13,7 @@ class CardsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.dataSource = self
-        tableView.rowHeight = 110
+        tableView.rowHeight = 130
         
         tableView.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         
@@ -48,6 +48,7 @@ class CardsTableViewController: UITableViewController {
         celula.nomeEndereco.text=localizacoes[indexPath.row]
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
         celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+        celula.selectionStyle = .none
 
         return celula
     }

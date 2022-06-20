@@ -17,8 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="343" height="106"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qJG-gw-3Lj">
-                        <rect key="frame" x="27" y="20" width="289" height="66"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qJG-gw-3Lj">
+                        <rect key="frame" x="27" y="10" width="289" height="66"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqj-5x-QYZ">
                                 <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
@@ -43,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt9-sw-XEn">
-                                        <rect key="frame" x="0.0" y="51.666666666666671" width="22" height="14.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="51.666666666666664" width="22" height="14.333333333333336"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -55,6 +55,8 @@
                 </subviews>
                 <color key="backgroundColor" name="AccentColor"/>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qJG-gw-3Lj" secondAttribute="bottom" constant="10" id="8HB-Ou-1fA"/>
+                    <constraint firstItem="qJG-gw-3Lj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Yjn-o2-5dq"/>
                     <constraint firstItem="qJG-gw-3Lj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="hkc-uZ-Up5"/>
                     <constraint firstItem="qJG-gw-3Lj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lH5-1J-Gng"/>
                 </constraints>
