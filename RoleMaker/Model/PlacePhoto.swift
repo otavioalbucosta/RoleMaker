@@ -12,4 +12,9 @@ struct PlacePhoto: Codable {
     let width: Int
     let photo_reference: String
     let html_attributions: [String]
+    
+//    func getPhoto() -> Data {
+//        var url = URLComponents(string: "https://maps.googleapis.com/maps/api/place/photo")
+//        
+//    }
 }

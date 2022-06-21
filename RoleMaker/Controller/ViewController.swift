@@ -16,9 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
             CardTableViewCell
 
-        celula.nomeLocal.text=localizacoes[indexPath.row]
-        celula.horario.text=localizacoes[indexPath.row]
-        celula.nomeEndereco.text=localizacoes[indexPath.row]
+        celula.nomeLocal.text=localizacoes[indexPath.row].name
+        celula.horario.text=String(localizacoes[indexPath.row].rating)
+        celula.nomeEndereco.text=localizacoes[indexPath.row].vicinity
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
         celula.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
         celula.selectionStyle = .none
@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         present(viewControllerToPresent, animated: true, completion: nil)
     }
     
-    let localizacoes = ["Localizaçao primeira", "Localização principal", "Localizaçao 3"]
+    let localizacoes = Place.mock()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleNavigation: UINavigationItem!
     @IBOutlet weak var navigationBar: UINavigationBar!
