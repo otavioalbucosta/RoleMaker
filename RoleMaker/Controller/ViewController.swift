@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
 
         let standard = UINavigationBarAppearance()
-        navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         
         standard.configureWithOpaqueBackground()
         standard.titleTextAttributes = [.foregroundColor: UIColor.white]

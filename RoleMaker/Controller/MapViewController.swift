@@ -8,12 +8,18 @@ import CoreLocation
 import UIKit
 import MapKit
 
+protocol MapKitViewControllerDelegate {
+    func addPlace(place: Place)
+}
+
 class MapKitViewController: UIViewController, MKMapViewDelegate {
     
     private let map: MKMapView = {
         let map = MKMapView()
         return map
     }()
+    
+    var delegate: MapKitViewControllerDelegate?
     
     
     
