@@ -18,39 +18,45 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qJG-gw-3Lj">
-                        <rect key="frame" x="27" y="10" width="289" height="66"/>
+                        <rect key="frame" x="27" y="10" width="289" height="73.666666666666671"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqj-5x-QYZ">
-                                <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+                                <rect key="frame" x="0.0" y="0.0" width="66" height="73.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="Qsg-AU-wPh"/>
                                     <constraint firstAttribute="height" constant="66" id="qPu-np-GNL"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-Al-lXO">
-                                <rect key="frame" x="82" y="0.0" width="207" height="66"/>
+                                <rect key="frame" x="82" y="0.0" width="207" height="58.666666666666664"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Nome local" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-eC-4Pf">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="29.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="31"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av. Treze de Maio, 10000 - Fortaleza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rz0-Hx-joD">
-                                        <rect key="frame" x="0.0" y="33.333333333333336" width="207" height="14.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="25.999999999999996" width="207" height="14.333333333333332"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt9-sw-XEn">
-                                        <rect key="frame" x="0.0" y="51.666666666666664" width="22" height="14.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="44.333333333333336" width="22" height="14.333333333333336"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Rz0-Hx-joD" firstAttribute="top" secondItem="UiN-eC-4Pf" secondAttribute="bottom" constant="-5" id="wTq-qa-IuK"/>
+                                </constraints>
                             </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cgy-Al-lXO" secondAttribute="bottom" constant="15" id="mZC-Oi-gd2"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <color key="backgroundColor" name="AccentColor"/>
