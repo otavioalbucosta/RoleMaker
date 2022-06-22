@@ -8,9 +8,9 @@
 import UIKit
 
 class CardsTableViewController: UITableViewController {
-    let mainPlace: Place? = nil
-    let preParty: Place? = nil
-    let afterParty: Place? = nil
+    var mainPlace: Place? = nil
+    var preParty: Place? = nil
+    var afterParty: Place? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,72 +43,71 @@ class CardsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             if let preParty = preParty {
-                
+                let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
+                CardTableViewCell
+                celula.nomeLocal.text = preParty.name
+                celula.nomeEndereco.text = preParty.vicinity
+                celula.horario.text = String(preParty.rating)
+                celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+                celula.selectionStyle = .none
+                return celula
+            } else {
+                let celula = Bundle(for: ChoosePlaceCardTableViewCell.self).loadNibNamed("ChoosePlaceCardTableViewCell", owner: self, options: nil)?.first as!
+                    ChoosePlaceCardTableViewCell
+                celula.chooseLabel.text = "O que você quer fazer\n antes do evento"
+                celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+                celula.selectionStyle = .none
+                return celula
+            }
+        }else if indexPath.row == 1 {
+            if let mainPlace = mainPlace {
+                let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
+                CardTableViewCell
+                celula.nomeLocal.text = mainPlace.name
+                celula.nomeEndereco.text = mainPlace.vicinity
+                celula.horario.text = String(mainPlace.rating)
+                celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+                celula.selectionStyle = .none
+                return celula
+            }
+        }else if indexPath.row == 2 {
+            if let afterPaty = afterParty {
+                let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
+                CardTableViewCell
+                celula.nomeLocal.text = afterPaty.name
+                celula.nomeEndereco.text = afterPaty.vicinity
+                celula.horario.text = String(afterPaty.rating)
+                celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+                celula.selectionStyle = .none
+                return celula
+            } else {
+                let celula = Bundle(for: ChoosePlaceCardTableViewCell.self).loadNibNamed("ChoosePlaceCardTableViewCell", owner: self, options: nil)?.first as!
+                    ChoosePlaceCardTableViewCell
+                celula.chooseLabel.text = "O que você quer fazer\n depois do evento"
+                celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+                celula.selectionStyle = .none
+                return celula
             }
         }
+        
         let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
-            CardTableViewCell
-
-//        celula.nomeLocal.text=localizacoes[indexPath.row]
-//        celula.horario.text=localizacoes[indexPath.row]
-//        celula.nomeEndereco.text=localizacoes[indexPath.row]
-//        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        CardTableViewCell
+        celula.nomeLocal.text = "Erro"
+        celula.nomeEndereco.text = "Erro"
+    celula.horario.text = "Erro"
+        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
         celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         celula.selectionStyle = .none
+
+       return celula
         
-        return celula
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt: IndexPath) {
             
         
     }
-    
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
 }
 
