@@ -21,7 +21,7 @@ struct Place: Codable {
     let photos: [PlacePhoto]
     
     func toPlaceAnnotation() -> PlaceAnnotation {
-        return PlaceAnnotation(self.geometry.location.lat, self.geometry.location.lng, title: name, subtitle: vicinity)
+        return PlaceAnnotation(self.geometry.location.lat, self.geometry.location.lng, title: name, subtitle: vicinity, id: place_id)
     }
 }
 

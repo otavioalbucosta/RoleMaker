@@ -104,7 +104,10 @@ class CardsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt: IndexPath) {
-            
+        let mapKitController = MapKitViewController()
+        mapKitController.delegate = self
+        mapKitController.cellnum = didSelectRowAt.row
+        show(mapKitController,sender: self)
         
     }
 
@@ -112,8 +115,13 @@ class CardsTableViewController: UITableViewController {
 }
 
 extension CardsTableViewController: MapKitViewControllerDelegate {
-    func addPlace(place: Place) {
-        self.dismiss(animated: true)
+    func addPlace(place: Place, cellNumber: Int) {
+        if cellNumber == 0 {
+            self.preParty = place
+        }else if cellNumber == 2{
+            self.afterParty = place
+        }
+        self.tableView.reloadData()
     }
 }
 

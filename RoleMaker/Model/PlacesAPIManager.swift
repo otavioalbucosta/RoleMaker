@@ -29,7 +29,6 @@ struct PlacesAPIManager {
             URLQueryItem(name: "radius", value: "\(radius)"),
             URLQueryItem(name:"key", value: apiKey)
         ]
-        print(url.url!)
         var places: [Place]?
         
         URLSession.shared.dataTask(with: url.url!) { data, response, error in
