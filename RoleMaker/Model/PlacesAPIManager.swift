@@ -34,6 +34,7 @@ struct PlacesAPIManager {
         URLSession.shared.dataTask(with: url.url!) { data, response, error in
             if let data = data {
                 do {
+                    print(url.url!)
                 let placeResponse = try JSONDecoder().decode(PlaceResponse.self, from: data)
                     places = placeResponse.results
                     completion(places!)

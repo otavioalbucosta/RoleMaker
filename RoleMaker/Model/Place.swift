@@ -16,9 +16,9 @@ struct Place: Codable {
     let vicinity: String
     let geometry: GeometryPlace
    let price_level: Int?
-    let rating: Double
+    let rating: Double?
     let types: [String]
-    let photos: [PlacePhoto]
+    let photos: [PlacePhoto]?
     
     func toPlaceAnnotation() -> PlaceAnnotation {
         return PlaceAnnotation(self.geometry.location.lat, self.geometry.location.lng, title: name, subtitle: vicinity, id: place_id)

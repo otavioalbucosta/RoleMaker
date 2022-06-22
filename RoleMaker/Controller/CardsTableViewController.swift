@@ -47,7 +47,10 @@ class CardsTableViewController: UITableViewController {
                 CardTableViewCell
                 celula.nomeLocal.text = preParty.name
                 celula.nomeEndereco.text = preParty.vicinity
-                celula.horario.text = String(preParty.rating)
+                if let rating = preParty.rating {
+                    celula.horario.text = String(rating)
+                }
+
                 celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
                 celula.selectionStyle = .none
                 return celula
@@ -65,7 +68,9 @@ class CardsTableViewController: UITableViewController {
                 CardTableViewCell
                 celula.nomeLocal.text = mainPlace.name
                 celula.nomeEndereco.text = mainPlace.vicinity
-                celula.horario.text = String(mainPlace.rating)
+                if let rating = mainPlace.rating {
+                    celula.horario.text = String(rating)
+                }
                 celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
                 celula.selectionStyle = .none
                 return celula
@@ -76,7 +81,9 @@ class CardsTableViewController: UITableViewController {
                 CardTableViewCell
                 celula.nomeLocal.text = afterPaty.name
                 celula.nomeEndereco.text = afterPaty.vicinity
-                celula.horario.text = String(afterPaty.rating)
+                if let rating = afterPaty.rating {
+                    celula.horario.text = String(rating)
+                }
                 celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
                 celula.selectionStyle = .none
                 return celula

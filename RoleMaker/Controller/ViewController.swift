@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             CardTableViewCell
 
         celula.nomeLocal.text=localizacoes[indexPath.row].name
-        celula.horario.text=String(localizacoes[indexPath.row].rating)
+        celula.horario.text=String(localizacoes[indexPath.row].rating!)
         celula.nomeEndereco.text=localizacoes[indexPath.row].vicinity
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
         celula.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
