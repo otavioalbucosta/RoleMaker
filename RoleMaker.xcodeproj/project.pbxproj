@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294367712864F14900328DEF /* FinalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294367702864F14900328DEF /* FinalTableViewController.swift */; };
 		296319A9285A282100DD92FB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296319A8285A282100DD92FB /* LocationManager.swift */; };
 		299D7263284E1FC500E31073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7262284E1FC500E31073 /* AppDelegate.swift */; };
 		299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7264284E1FC500E31073 /* SceneDelegate.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		294367702864F14900328DEF /* FinalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalTableViewController.swift; sourceTree = "<group>"; };
 		296319A8285A282100DD92FB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		299D725F284E1FC500E31073 /* RoleMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoleMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299D7262284E1FC500E31073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				299E2EC2285C139B00AE4CED /* MapViewController.swift */,
 				DD176FFB2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift */,
 				DD0202532864B2F6008E7515 /* FinalRoleViewController.swift */,
+				294367702864F14900328DEF /* FinalTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				299D7265284E1FC500E31073 /* SceneDelegate.swift in Sources */,
 				DD0202542864B2F6008E7515 /* FinalRoleViewController.swift in Sources */,
 				299E2EC5285CF63F000D11D0 /* PlacesAPIManager.swift in Sources */,
+				294367712864F14900328DEF /* FinalTableViewController.swift in Sources */,
 				29D0F6042850D7C500AF8377 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

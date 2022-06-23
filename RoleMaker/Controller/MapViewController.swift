@@ -110,7 +110,7 @@ class MapKitViewController: UIViewController, MKMapViewDelegate{
 //            guard let strongSelf = self else {return}
 //            strongSelf.currentLocation = location
 //            print("foi2")
-        PlacesAPIManager.shared.getNearbyPlacesByType(location: CLLocation(latitude: mainRoleLocation!.coordinate.latitude, longitude: mainRoleLocation!.coordinate.longitude)  , type: "restaurant", radius: 1000) { places in
+        PlacesAPIManager.shared.getNearbyPlacesByType(location: CLLocation(latitude: mainRoleLocation!.coordinate.latitude, longitude: mainRoleLocation!.coordinate.longitude)  , type: "restaurant", radius: 2000) { places in
             self.places = places
             print("foi1")
         }

@@ -21,7 +21,12 @@ class SheetViewController: UIViewController {
     
     let nv = FinalRoleViewController()
     @objc func buttonAction(sender: UIButton!) {
-        show(nv, sender: self)
+        if sheetCard.preParty != nil || sheetCard.afterParty != nil{
+            nv.startPlace = sheetCard.preParty
+            nv.midPlace = sheetCard.mainPlace
+            nv.endPlace = sheetCard.afterParty
+            show(nv, sender: self)
+        }
     }
     
     var image = UIImageView(image: UIImage(systemName: "minus"))

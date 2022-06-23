@@ -11,8 +11,12 @@ import CoreLocation
 
 class FinalRoleViewController: UIViewController, MKMapViewDelegate {
     
+    var startPlace: Place? = nil
+    var midPlace: Place? = nil
+    var endPlace: Place? = nil
     
-    let finalCard = CardsTableViewController()
+    let finalCard = FinalTableViewController()
+    
     
     let map: MKMapView = {
         let map = MKMapView()
@@ -20,7 +24,9 @@ class FinalRoleViewController: UIViewController, MKMapViewDelegate {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        finalCard.startPlace = startPlace
+        finalCard.midPlace = midPlace
+        finalCard.endPlace = endPlace
         view.addSubview(map)
         view.addSubview(finalCard.view)
         
@@ -46,6 +52,8 @@ class FinalRoleViewController: UIViewController, MKMapViewDelegate {
 //        text.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 //        text.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         // Do any additional setup after loading the view.
+        calculateRoute()
+        
     }
     
 
@@ -58,6 +66,69 @@ class FinalRoleViewController: UIViewController, MKMapViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    func calculateRoute() {
+        let startMark = MKMapItem(placemark: MKPlacemark(coordinate: (startPlace!.toPlaceAnnotation().coordinate)))
+        let startPoint = MKPointAnnotation()
+        startPoint.coordinate = (startPlace!.toPlaceAnnotation().coordinate)
+        startPoint.title = startPlace?.name
+        
+        let midMark = MKMapItem(placemark: MKPlacemark(coordinate: (midPlace!.toPlaceAnnotation().coordinate)))
+        let midPoint = MKPointAnnotation()
+        midPoint.coordinate = (midPlace!.toPlaceAnnotation().coordinate)
+        midPoint.title = midPlace?.name
+        
+        let endMark = MKMapItem(placemark: MKPlacemark(coordinate: (endPlace!.toPlaceAnnotation().coordinate)))
+        let endPoint = MKPointAnnotation()
+        endPoint.coordinate = (endPlace!.toPlaceAnnotation().coordinate)
+        endPoint.title = endPlace?.name
+        
+        
+        let directionStartMid = MKDirections.Request()
+        directionStartMid.source = startMark
+        directionStartMid.destination = midMark
+        directionStartMid.transportType = .automobile
+        
+        let directionMidEnd = MKDirections.Request()
+        directionStartMid.source = midMark
+        directionStartMid.destination = endMark
+        directionStartMid.transportType = .automobile
+
+        
+        self.map.showAnnotations([startPoint, midPoint, endPoint], animated: true)
+        
+        let dirSM = MKDirections(request: directionStartMid)
+        let dirME = MKDirections(request: directionMidEnd)
+        
+        dirSM.calculate { res, error in
+            guard let res = res else {
+                if let error = error {
+                    print("Error found: \(error)")
+                }
+                return
+            }
+            let route = res.routes[0]
+            self.map.addOverlay(route.polyline, level: MKOverlayLevel.aboveRoads)
+            
+            
+        }
+        dirME.calculate { res, error in
+            guard let res = res else {
+                if let error = error {
+                    print("Error found: \(error)")
+                }
+                return
+            }
+            let route = res.routes[0]
+            self.map.addOverlay(route.polyline, level: MKOverlayLevel.aboveLabels)
+            
+            
+        }
+//        let rect = route.polyline.boundingMapRect
+//        self.map.setRegion(MKCoordinateRegion(rect, animated: true)
+        
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         map.frame = view.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 390, height: 450))
@@ -65,4 +136,17 @@ class FinalRoleViewController: UIViewController, MKMapViewDelegate {
 //        map.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     }
 
+}
+
+
+extension FinalRoleViewController {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.lineWidth = 5
+        renderer.strokeColor = .systemYellow
+        
+        return renderer
+    }
+    
+    
 }
