@@ -41,11 +41,11 @@ class FinalRoleViewController: UIViewController, MKMapViewDelegate {
         finalCard.view.translatesAutoresizingMaskIntoConstraints = false
         
 //        finalCard.view.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
-        finalCard.view.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
-        finalCard.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 450).isActive = true
+        finalCard.view.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
+        finalCard.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 350).isActive = true
 //        finalCard.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
-        finalCard.view.widthAnchor.constraint(equalToConstant: 370).isActive = true
-        finalCard.view.heightAnchor.constraint(equalToConstant: 290).isActive = true
+        finalCard.view.widthAnchor.constraint(equalToConstant: 360).isActive = true
+        finalCard.view.heightAnchor.constraint(equalToConstant: 450).isActive = true
         
         
 //        text.translatesAutoresizingMaskIntoConstraints = false
@@ -131,7 +131,7 @@ class FinalRoleViewController: UIViewController, MKMapViewDelegate {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        map.frame = view.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 390, height: 450))
+        map.frame = view.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 390, height: 350))
 //        map.layer.cornerRadius = 25
 //        map.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     }
