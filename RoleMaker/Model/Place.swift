@@ -46,6 +46,24 @@ extension Place {
             "\\u003ca href=\"https://maps.google.com/maps/contrib/114727320476039103791\"\\u003eThe Little Snail Restaurant\\u003c/a\\u003e"
          ])]))
         
+        
+        places.append(Place(place_id: "ChIJGVS6ABBJxwcRoNeTujPud1Y", name: "Barbarians Pub", vicinity: "Rua Waldery Uchôa, 42 - Benfica, Fortaleza", geometry: GeometryPlace(location: Location(lat: -33.870383 ,lng: 151.1979245)), price_level: 2, rating: 4.4, types: [ "bar", "restaurant", "point_of_interest", "food", "establishment" ], photos: [PlacePhoto(height: 900, width: 1350, photo_reference: "Aap_uEDLOFt4y-J3CMzmVRs-SzwKcE7J44U2MHnkr--ADNOno2Mn0y82FH-ZWjDul8B7rVsJQIC4ctJl9MlDwXxLVUp7EjmMUo6K3QH4pkXNo3j56ogjdYXGkvDyKk0JPUSzmz9ihRAhzyA4iYUoVmd30INquAnG9CVB4a7F961e6x_sdyJz", html_attributions: [
+            "\\u003ca href=\"https://maps.google.com/maps/contrib/114727320476039103791\"\\u003eThe Little Snail Restaurant\\u003c/a\\u003e"
+         ])]))
+        
+        
+        
+        places.append(Place(place_id: "ChIJGVS6ABBJxwcRoNeTujPud1Y", name: "Barbarians Pub", vicinity: "Rua Waldery Uchôa, 42 - Benfica, Fortaleza", geometry: GeometryPlace(location: Location(lat: -33.870383 ,lng: 151.1979245)), price_level: 2, rating: 4.4, types: [ "bar", "restaurant", "point_of_interest", "food", "establishment" ], photos: [PlacePhoto(height: 900, width: 1350, photo_reference: "Aap_uEDLOFt4y-J3CMzmVRs-SzwKcE7J44U2MHnkr--ADNOno2Mn0y82FH-ZWjDul8B7rVsJQIC4ctJl9MlDwXxLVUp7EjmMUo6K3QH4pkXNo3j56ogjdYXGkvDyKk0JPUSzmz9ihRAhzyA4iYUoVmd30INquAnG9CVB4a7F961e6x_sdyJz", html_attributions: [
+            "\\u003ca href=\"https://maps.google.com/maps/contrib/114727320476039103791\"\\u003eThe Little Snail Restaurant\\u003c/a\\u003e"
+         ])]))
+        
+        
+        
+        places.append(Place(place_id: "ChIJGVS6ABBJxwcRoNeTujPud1Y", name: "Barbarians Pub", vicinity: "Rua Waldery Uchôa, 42 - Benfica, Fortaleza", geometry: GeometryPlace(location: Location(lat: -33.870383 ,lng: 151.1979245)), price_level: 2, rating: 4.4, types: [ "bar", "restaurant", "point_of_interest", "food", "establishment" ], photos: [PlacePhoto(height: 900, width: 1350, photo_reference: "Aap_uEDLOFt4y-J3CMzmVRs-SzwKcE7J44U2MHnkr--ADNOno2Mn0y82FH-ZWjDul8B7rVsJQIC4ctJl9MlDwXxLVUp7EjmMUo6K3QH4pkXNo3j56ogjdYXGkvDyKk0JPUSzmz9ihRAhzyA4iYUoVmd30INquAnG9CVB4a7F961e6x_sdyJz", html_attributions: [
+            "\\u003ca href=\"https://maps.google.com/maps/contrib/114727320476039103791\"\\u003eThe Little Snail Restaurant\\u003c/a\\u003e"
+         ])]))
+        
+        
         places.append(Place(place_id: "ChIJG4fyFhVJxwcRvmwn4KAtpIA", name: "Culinária da Van", vicinity: "Rua Waldery Uchôa, 260 - Benfica, Fortaleza", geometry: GeometryPlace(location: Location(lat: -3.7441239 ,lng: -38.5391313)), price_level: 2, rating: 4.5, types: [
             "bar",
             "spa",
@@ -57,6 +75,7 @@ extension Place {
          ], photos: [PlacePhoto(height: 900, width: 1350, photo_reference: "Aap_uEDLOFt4y-J3CMzmVRs-SzwKcE7J44U2MHnkr--ADNOno2Mn0y82FH-ZWjDul8B7rVsJQIC4ctJl9MlDwXxLVUp7EjmMUo6K3QH4pkXNo3j56ogjdYXGkvDyKk0JPUSzmz9ihRAhzyA4iYUoVmd30INquAnG9CVB4a7F961e6x_sdyJz", html_attributions: [
             "\\u003ca href=\"https://maps.google.com/maps/contrib/114727320476039103791\"\\u003eThe Little Snail Restaurant\\u003c/a\\u003e"
          ])]))
+        
         return places
     }
     #endif

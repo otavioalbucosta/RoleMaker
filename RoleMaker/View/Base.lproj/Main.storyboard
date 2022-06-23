@@ -22,8 +22,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-yd-BMe">
                                 <rect key="frame" x="0.0" y="187" width="390" height="623"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principais eventos próximos de você" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-wN-GiZ">
-                                        <rect key="frame" x="32" y="7" width="306.66666666666669" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principais eventos próximos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-wN-GiZ">
+                                        <rect key="frame" x="18.000000000000014" y="7" width="235.33333333333337" height="23"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -37,10 +37,10 @@
                                 <constraints>
                                     <constraint firstItem="X0e-f8-JuJ" firstAttribute="centerX" secondItem="fJn-yd-BMe" secondAttribute="centerX" id="8SF-Y3-hOM"/>
                                     <constraint firstAttribute="bottom" secondItem="X0e-f8-JuJ" secondAttribute="bottom" constant="-58" id="IEA-Cm-ldT"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j6Y-wN-GiZ" secondAttribute="trailing" symbolic="YES" id="ay9-q5-26q"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j6Y-wN-GiZ" secondAttribute="trailing" constant="20" symbolic="YES" id="ay9-q5-26q"/>
                                     <constraint firstItem="X0e-f8-JuJ" firstAttribute="leading" secondItem="fJn-yd-BMe" secondAttribute="leading" constant="16" id="jHc-9M-WQ0"/>
                                     <constraint firstItem="X0e-f8-JuJ" firstAttribute="top" secondItem="fJn-yd-BMe" secondAttribute="top" constant="40" id="kew-k2-5Fn"/>
-                                    <constraint firstItem="j6Y-wN-GiZ" firstAttribute="leading" secondItem="fJn-yd-BMe" secondAttribute="leading" constant="32" id="lfU-jg-gGL"/>
+                                    <constraint firstItem="j6Y-wN-GiZ" firstAttribute="leading" secondItem="fJn-yd-BMe" secondAttribute="leading" constant="18" id="lfU-jg-gGL"/>
                                     <constraint firstItem="X0e-f8-JuJ" firstAttribute="top" secondItem="j6Y-wN-GiZ" secondAttribute="bottom" constant="10" id="qGK-Z0-LpL"/>
                                 </constraints>
                             </view>
