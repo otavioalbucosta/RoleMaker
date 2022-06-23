@@ -8,11 +8,11 @@
 import UIKit
 
 class CardsTableViewController: UITableViewController {
-    //tirar nil, apagar localizacoes
     let mainPlace: Place? = nil
     let preParty: Place? = nil
     let afterParty: Place? = nil
-    let localizacoes = ["teste1 ", "teste 4","teste 2"]
+    
+     let localizacoes = ["teste testando teste2 testando2 teste3 testando3 teste4 testando 4 teste5 testando5", "xzkjfjdnj fndsifidj fjdsijf oijofjsoid hxhhzx", "hfijasfidsjf ij ifjioj  aoj oj bhbz"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,7 +46,7 @@ class CardsTableViewController: UITableViewController {
 //        if indexPath.row == 0 {
 //            if let mainPlace
 //        }
-//      
+      
         let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
             CardTableViewCell
 

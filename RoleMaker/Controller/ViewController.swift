@@ -36,7 +36,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        NSLayoutConstraint.activate([
 //            celula.botto
 //        ])
+        
+       // class ViewController: UIViewController {
+
+
+        //}
         return celula
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -60,12 +67,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var labelHome1: UILabel!
     @IBOutlet weak var cardHome: UIView!
     
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
     
 
+        
+        
         let standard = UINavigationBarAppearance()
         navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         
@@ -111,6 +123,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(text)
     }
 }
+
 
 
 //

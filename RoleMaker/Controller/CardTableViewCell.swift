@@ -24,6 +24,9 @@ class CardTableViewCell: UITableViewCell {
         card.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
         card.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         
+        nomeEndereco.lineBreakMode = NSLineBreakMode.byTruncatingMiddle
+//        nomeEndereco.numberOfLines = 0
+        
 
         card.backgroundColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1.0)
     }
