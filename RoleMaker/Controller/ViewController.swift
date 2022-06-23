@@ -10,7 +10,8 @@ import UIKit
 class ResultsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        
+        
     }
 }
 
@@ -69,14 +70,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var cardHome: UIView!
     
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
     
-
+//        UIApplication.shared.st
         
         
         let standard = UINavigationBarAppearance()
@@ -116,6 +116,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
 //        ])
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else {

@@ -57,7 +57,7 @@ class CardsTableViewController: UITableViewController {
             } else {
                 let celula = Bundle(for: ChoosePlaceCardTableViewCell.self).loadNibNamed("ChoosePlaceCardTableViewCell", owner: self, options: nil)?.first as!
                     ChoosePlaceCardTableViewCell
-                celula.chooseLabel.text = "O que você quer fazer\n antes do evento"
+                celula.chooseLabel.text = "Selecione o local antes do evento"
                 celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
                 celula.selectionStyle = .none
                 return celula
@@ -90,7 +90,7 @@ class CardsTableViewController: UITableViewController {
             } else {
                 let celula = Bundle(for: ChoosePlaceCardTableViewCell.self).loadNibNamed("ChoosePlaceCardTableViewCell", owner: self, options: nil)?.first as!
                     ChoosePlaceCardTableViewCell
-                celula.chooseLabel.text = "O que você quer fazer\n depois do evento"
+                celula.chooseLabel.text = "Selecione o local depois do evento"
                 celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
                 celula.selectionStyle = .none
                 return celula
