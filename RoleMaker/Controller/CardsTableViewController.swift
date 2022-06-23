@@ -12,7 +12,7 @@ class CardsTableViewController: UITableViewController {
     let preParty: Place? = nil
     let afterParty: Place? = nil
     
-     let localizacoes = ["oioioi", "xzkjhxhhzx", "hbhbz"]
+     let localizacoes = ["teste testando teste2 testando2 teste3 testando3 teste4 testando 4 teste5 testando5", "xzkjfjdnj fndsifidj fjdsijf oijofjsoid hxhhzx", "hfijasfidsjf ij ifjioj  aoj oj bhbz"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
