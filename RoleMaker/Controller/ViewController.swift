@@ -7,7 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ResultsVC: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBlue
+    }
+}
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+    
+    let searchController = UISearchController(searchResultsController: nil )
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return localizacoes.count
     }
@@ -52,6 +62,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+    
 
         let standard = UINavigationBarAppearance()
         navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
@@ -89,6 +102,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 //            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
 //        ])
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        print(text)
     }
 }
 

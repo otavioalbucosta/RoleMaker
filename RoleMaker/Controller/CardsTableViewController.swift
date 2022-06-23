@@ -8,9 +8,11 @@
 import UIKit
 
 class CardsTableViewController: UITableViewController {
-    let mainPlace: Place
-    let preParty: Place?
-    let afterParty: Place?
+    //tirar nil, apagar localizacoes
+    let mainPlace: Place? = nil
+    let preParty: Place? = nil
+    let afterParty: Place? = nil
+    let localizacoes = ["teste1 ", "teste 4","teste 2"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,17 +47,17 @@ class CardsTableViewController: UITableViewController {
 //            if let mainPlace
 //        }
 //      
-//        let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
-//            CardTableViewCell
-//
-//        celula.nomeLocal.text=localizacoes[indexPath.row]
-//        celula.horario.text=localizacoes[indexPath.row]
-//        celula.nomeEndereco.text=localizacoes[indexPath.row]
-//        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
-//        celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
-//        celula.selectionStyle = .none
-//
-//        return celula
+        let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
+            CardTableViewCell
+
+        celula.nomeLocal.text=localizacoes[indexPath.row]
+        celula.horario.text=localizacoes[indexPath.row]
+        celula.nomeEndereco.text=localizacoes[indexPath.row]
+        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
+        celula.selectionStyle = .none
+
+        return celula
     }
     
 
