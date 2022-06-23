@@ -23,6 +23,9 @@ struct Place: Codable {
     func toPlaceAnnotation() -> PlaceAnnotation {
         return PlaceAnnotation(self.geometry.location.lat, self.geometry.location.lng, title: name, subtitle: vicinity, id: place_id)
     }
+    
+    
+    
 }
 
 struct GeometryPlace: Codable {
@@ -33,9 +36,8 @@ struct Location: Codable {
     let lng: Double
 }
 
-
+#if DEBUG
 extension Place {
-    #if DEBUG
     static func mock() -> [Place] {
         var places: [Place] = []
         places.append(Place(place_id: "ChIJT9wQXv1IxwcR-WMIWjBO7RY", name: "Boteco do Arlindo", vicinity: "Rua Carlos Gomes, 83 - José Bonifacio, Fortaleza", geometry: GeometryPlace(location: Location(lat: -3.7415457 ,lng: -38.5267982)), price_level: 2, rating: 4.3, types: [ "bar", "restaurant", "point_of_interest", "food", "establishment" ], photos: [PlacePhoto(height: 900, width: 1350, photo_reference: "Aap_uEDLOFt4y-J3CMzmVRs-SzwKcE7J44U2MHnkr--ADNOno2Mn0y82FH-ZWjDul8B7rVsJQIC4ctJl9MlDwXxLVUp7EjmMUo6K3QH4pkXNo3j56ogjdYXGkvDyKk0JPUSzmz9ihRAhzyA4iYUoVmd30INquAnG9CVB4a7F961e6x_sdyJz", html_attributions: [
@@ -78,5 +80,5 @@ extension Place {
         
         return places
     }
-    #endif
 }
+#endif

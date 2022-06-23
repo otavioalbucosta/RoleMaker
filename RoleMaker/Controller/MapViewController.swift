@@ -22,21 +22,36 @@ class MapKitViewController: UIViewController, MKMapViewDelegate{
     var delegate: MapKitViewControllerDelegate?
     var cellnum: Int?
     
-    private var currentLocation: CLLocation? = nil {
-        didSet{
-            if let currentLocation = currentLocation {
-                let pin = LocationManager.shared.toLocationManagerAnnotation()
+    var mainRoleLocation: PlaceAnnotation? = nil {
+        didSet {
+            if let mainRoleLocation = mainRoleLocation {
                 self.map.setRegion(
                     MKCoordinateRegion(
-                        center: currentLocation.coordinate,
+                        center: mainRoleLocation.coordinate,
                         span: MKCoordinateSpan.init(
                             latitudeDelta: 0.1,
                             longitudeDelta: 0.1) ),
                         animated: true)
-                self.map.addAnnotation(pin)
+                self.map.addAnnotation(mainRoleLocation)
             }
         }
     }
+    
+//    private var currentLocation: CLLocation? = nil {
+//        didSet{
+//            if let currentLocation = currentLocation {
+//                let pin = LocationManager.shared.toLocationManagerAnnotation()
+//                self.map.setRegion(
+//                    MKCoordinateRegion(
+//                        center: currentLocation.coordinate,
+//                        span: MKCoordinateSpan.init(
+//                            latitudeDelta: 0.1,
+//                            longitudeDelta: 0.1) ),
+//                        animated: true)
+//                self.map.addAnnotation(pin)
+//            }
+//        }
+//    }
     
     private var places: [Place] = []{
         didSet {
@@ -48,7 +63,7 @@ class MapKitViewController: UIViewController, MKMapViewDelegate{
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        if let annotation =  view.annotation as? LocationManagerAnnotation {
+        if view.annotation?.title ==  mainRoleLocation?.title {
             return
         }
         let placeAnnotation = view.annotation as! PlaceAnnotation
@@ -63,7 +78,7 @@ class MapKitViewController: UIViewController, MKMapViewDelegate{
         guard !(annotation is MKUserLocation) else {
             return nil
         }
-        if let annotation = annotation as? LocationManagerAnnotation {
+        if annotation.title == mainRoleLocation?.title {
             annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "")
             annotationView.markerTintColor = .blue
             annotationView.displayPriority = .required
@@ -88,15 +103,15 @@ class MapKitViewController: UIViewController, MKMapViewDelegate{
         super.viewDidLoad()
         view.addSubview(map)
         map.delegate = self
-        LocationManager.shared.getUserLocation { [weak self] location in
-            guard let strongSelf = self else {return}
-            strongSelf.currentLocation = location
-            print("foi2")
-            PlacesAPIManager.shared.getNearbyPlacesByType(location: LocationManager.currentLocation!, type: "restaurant", radius: 1000) { places in
-                self?.places = places
-                print("foi1")
-            }
+//        LocationManager.shared.getUserLocation { [weak self] location in
+//            guard let strongSelf = self else {return}
+//            strongSelf.currentLocation = location
+//            print("foi2")
+        PlacesAPIManager.shared.getNearbyPlacesByType(location: CLLocation(latitude: mainRoleLocation!.coordinate.latitude, longitude: mainRoleLocation!.coordinate.longitude)  , type: "restaurant", radius: 1000) { places in
+            self.places = places
+            print("foi1")
         }
+//        }
         
         
         print("foi3")

@@ -114,6 +114,7 @@ class CardsTableViewController: UITableViewController {
         let mapKitController = MapKitViewController()
         mapKitController.delegate = self
         mapKitController.cellnum = didSelectRowAt.row
+        mapKitController.mainRoleLocation = mainPlace?.toPlaceAnnotation()
         show(mapKitController,sender: self)
         
     }
