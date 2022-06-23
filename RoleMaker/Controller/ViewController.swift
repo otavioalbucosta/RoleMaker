@@ -7,7 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ResultsVC: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBlue
+    }
+}
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+    
+    let searchController = UISearchController(searchResultsController: nil )
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return localizacoes.count
     }
@@ -17,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             CardTableViewCell
 
         celula.nomeLocal.text=localizacoes[indexPath.row].name
-        celula.horario.text=String(localizacoes[indexPath.row].rating)
+        celula.horario.text=String(localizacoes[indexPath.row].rating!)
         celula.nomeEndereco.text=localizacoes[indexPath.row].vicinity
         celula.nomeImagem.image = UIImage(named: "Rectangle-1")
         celula.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
@@ -26,7 +36,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        NSLayoutConstraint.activate([
 //            celula.botto
 //        ])
+        
+       // class ViewController: UIViewController {
+
+
+        //}
         return celula
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -38,6 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 sheet.prefersEdgeAttachedInCompactHeight = true
                 sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
             }
+        viewControllerToPresent.sheetCard.mainPlace = localizacoes[indexPath.row]
         var mapKitController = MapKitViewController()
 //        show(mapKitController,sender: self)
         present(viewControllerToPresent, animated: true, completion: nil)
@@ -50,11 +68,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var labelHome1: UILabel!
     @IBOutlet weak var cardHome: UIView!
     
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+    
 
+        
+        
         let standard = UINavigationBarAppearance()
-        navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         
         standard.configureWithOpaqueBackground()
         standard.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -90,7 +116,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
 //        ])
     }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        print(text)
+    }
 }
+
 
 
 //

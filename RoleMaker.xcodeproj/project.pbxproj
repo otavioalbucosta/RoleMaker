@@ -27,6 +27,8 @@
 		29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6052850E54600AF8377 /* PlacePhoto.swift */; };
 		DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FF12857D45900DE9403 /* SheetViewController.swift */; };
 		DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD176FF22857D45900DE9403 /* SheetViewController.xib */; };
+		DD176FFD2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FFB2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift */; };
+		DD176FFE2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD176FFC2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib */; };
 		DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */; };
 		DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */; };
 		E3E1DBBD285A1D38005D1E99 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */; };
@@ -76,6 +78,8 @@
 		29D0F6052850E54600AF8377 /* PlacePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhoto.swift; sourceTree = "<group>"; };
 		DD176FF12857D45900DE9403 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		DD176FF22857D45900DE9403 /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
+		DD176FFB2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlaceCardTableViewCell.swift; sourceTree = "<group>"; };
+		DD176FFC2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoosePlaceCardTableViewCell.xib; sourceTree = "<group>"; };
 		DD89BC42285238AC007D9D80 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
+				DD176FFC2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib */,
 				E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */,
 			);
 			path = View;
@@ -191,6 +196,7 @@
 				E3E1DBBB285A1D38005D1E99 /* CardsTableViewController.swift */,
 				299E2EC2285C139B00AE4CED /* MapViewController.swift */,
 				299E2EC8285E6122000D11D0 /* PlaceSheetViewController.swift */,
+				DD176FFB2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				299D726A284E1FC500E31073 /* Main.storyboard in Resources */,
 				299E2EC5285C139B00AE4CED /* MapViewController.xib in Resources */,
 				DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */,
+				DD176FFE2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib in Resources */,
 				DD89BC45285238AC007D9D80 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				299E2EC4285C139B00AE4CED /* MapViewController.swift in Sources */,
+				DD176FFD2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift in Sources */,
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
 				299E2ECA285E6122000D11D0 /* PlaceSheetViewController.swift in Sources */,
 				DD89BC44285238AC007D9D80 /* CardTableViewCell.swift in Sources */,
@@ -536,11 +544,13 @@
 				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoleMaker/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location acces to use our app!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,11 +575,13 @@
 				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoleMaker/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location acces to use our app!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
