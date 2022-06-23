@@ -24,6 +24,7 @@
 		29D0F6042850D7C500AF8377 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6032850D7C500AF8377 /* Place.swift */; };
 		29D0F6062850E54600AF8377 /* PlacePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D0F6052850E54600AF8377 /* PlacePhoto.swift */; };
 		DD0202542864B2F6008E7515 /* FinalRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0202532864B2F6008E7515 /* FinalRoleViewController.swift */; };
+		DD0202562864DCCB008E7515 /* FinalScreenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0202552864DCCB008E7515 /* FinalScreenSwiftUIView.swift */; };
 		DD176FF32857D45900DE9403 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FF12857D45900DE9403 /* SheetViewController.swift */; };
 		DD176FF42857D45900DE9403 /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD176FF22857D45900DE9403 /* SheetViewController.xib */; };
 		DD176FFD2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD176FFB2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift */; };
@@ -73,6 +74,7 @@
 		29D0F6032850D7C500AF8377 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		29D0F6052850E54600AF8377 /* PlacePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhoto.swift; sourceTree = "<group>"; };
 		DD0202532864B2F6008E7515 /* FinalRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalRoleViewController.swift; sourceTree = "<group>"; };
+		DD0202552864DCCB008E7515 /* FinalScreenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScreenSwiftUIView.swift; sourceTree = "<group>"; };
 		DD176FF12857D45900DE9403 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		DD176FF22857D45900DE9403 /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
 		DD176FFB2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlaceCardTableViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
 				DD176FFC2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib */,
 				E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */,
+				DD0202552864DCCB008E7515 /* FinalScreenSwiftUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0202562864DCCB008E7515 /* FinalScreenSwiftUIView.swift in Sources */,
 				299E2EC4285C139B00AE4CED /* MapViewController.swift in Sources */,
 				DD176FFD2862020F00DE9403 /* ChoosePlaceCardTableViewCell.swift in Sources */,
 				299D7267284E1FC500E31073 /* ViewController.swift in Sources */,
