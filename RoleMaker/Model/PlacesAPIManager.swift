@@ -45,7 +45,4 @@ struct PlacesAPIManager {
                 
             }.resume()
     }
-    
-    
-    
 }

@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let celula = Bundle(for: CardTableViewCell.self).loadNibNamed("CardTableViewCell", owner: self, options: nil)?.first as!
             CardTableViewCell
 
+//        let photo = localizacoes[indexPath.row].photos
+        
         celula.nomeLocal.text=localizacoes[indexPath.row].name
         celula.horario.text=String(localizacoes[indexPath.row].rating!)
         celula.nomeEndereco.text=localizacoes[indexPath.row].vicinity

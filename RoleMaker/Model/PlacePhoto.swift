@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct PlacePhoto: Codable {
     let height: Int
@@ -13,8 +14,31 @@ struct PlacePhoto: Codable {
     let photo_reference: String
     let html_attributions: [String]
     
-//    func getPhoto() -> Data {
+    static let shared = PlacesAPIManager()
+    let apiKey = "AIzaSyCIdjzHIaOmkS6eKWvkOz5RmmNdN5H34YY"
+    
+//    func getPhoto(location: CLLocation, type: String, radius: Int, completion: @escaping ([Place])->()) {
 //        var url = URLComponents(string: "https://maps.googleapis.com/maps/api/place/photo")
 //        
+//        url.queryItems = [
+//            URLQueryItem(name: "location", value: "\(location.coordinate.latitude),\(location.coordinate.longitude)"),
+//            URLQueryItem(name: "type", value: type),
+//            URLQueryItem(name:"key", value: apiKey)
+//        ]
+//        var places: [Place]?
+//        
+//        URLSession.shared.dataTask(with: url.url!) { data, response, error in
+//            if let data = data {
+//                do {
+//                    print(url.url!)
+//                    let placeResponse = try JSONDecoder().decode(PlaceResponse.self, from: data)
+//                    places = placeResponse.results
+//                    completion(places!)
+//                }catch {
+//                    print(error)
+//                }
+//            }
+//            
+//        }.resume()
 //    }
 }

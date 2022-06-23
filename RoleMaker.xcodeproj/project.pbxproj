@@ -173,11 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				299E2EC3285C139B00AE4CED /* MapViewController.xib */,
+				DD176FFC2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib */,
 				DD176FF22857D45900DE9403 /* SheetViewController.xib */,
 				299D7268284E1FC500E31073 /* Main.storyboard */,
 				299D726D284E1FC600E31073 /* LaunchScreen.storyboard */,
 				DD89BC43285238AC007D9D80 /* CardTableViewCell.xib */,
-				DD176FFC2862020F00DE9403 /* ChoosePlaceCardTableViewCell.xib */,
 				E3E1DBBC285A1D38005D1E99 /* CardsTableViewController.xib */,
 				DD0202552864DCCB008E7515 /* FinalScreenSwiftUIView.swift */,
 			);
