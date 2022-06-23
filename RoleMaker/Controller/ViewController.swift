@@ -56,8 +56,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
             }
         viewControllerToPresent.sheetCard.mainPlace = localizacoes[indexPath.row]
-        var mapKitController = MapKitViewController()
-//        show(mapKitController,sender: self)
         present(viewControllerToPresent, animated: true, completion: nil)
     }
     
