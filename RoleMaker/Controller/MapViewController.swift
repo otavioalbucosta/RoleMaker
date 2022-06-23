@@ -55,15 +55,18 @@ class MapKitViewController: UIViewController, MKMapViewDelegate{
     
     private var places: [Place] = []{
         didSet {
-            let placeAnnotation = places.map{ Place in
+            var placeAnnotation = places.map{ Place in
                 return Place.toPlaceAnnotation()
+            }
+            placeAnnotation.removeAll { PlaceAnnotation in
+                return PlaceAnnotation.title == mainRoleLocation?.title
             }
             self.map.addAnnotations(placeAnnotation)
         }
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        if view.annotation?.title ==  mainRoleLocation?.title {
+        if view.annotation?.title == mainRoleLocation?.title {
             return
         }
         let placeAnnotation = view.annotation as! PlaceAnnotation
