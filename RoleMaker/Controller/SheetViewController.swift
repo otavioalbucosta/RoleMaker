@@ -43,9 +43,9 @@ class SheetViewController: UIViewController {
         buttonFinalRole.setTitle(" Criar rota ", for: .normal)
 //        buttonFinalRole.tintColor = .sys
         buttonFinalRole.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        buttonFinalRole.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
+//        buttonFinalRole.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
         buttonFinalRole.layer.cornerRadius = 8
-//        buttonFinalRole.setTitleColor(.black, for: .normal)
+        buttonFinalRole.setTitleColor(.black, for: .normal)
 //        buttonFinalRole.layer.borderWidth = 1
         
         

@@ -45,6 +45,7 @@ class FinalTableViewController: UITableViewController {
                 CardTableViewCell
                 celula.nomeLocal.text = startPlace.name
                 celula.nomeEndereco.text = startPlace.vicinity
+                celula.nomeImagem.image = UIImage(named: "bar2")
                 if let rating = startPlace.rating {
                     celula.horario.text = String(rating)
                 }
@@ -59,6 +60,7 @@ class FinalTableViewController: UITableViewController {
                 CardTableViewCell
                 celula.nomeLocal.text = midPlace.name
                 celula.nomeEndereco.text = midPlace.vicinity
+                celula.nomeImagem.image = UIImage(named: "bar2")
                 if let rating = midPlace.rating {
                     celula.horario.text = String(rating)
                 }
@@ -72,6 +74,7 @@ class FinalTableViewController: UITableViewController {
                 CardTableViewCell
                 celula.nomeLocal.text = endPlace.name
                 celula.nomeEndereco.text = endPlace.vicinity
+                celula.nomeImagem.image = UIImage(named: "bar1")
                 if let rating = endPlace.rating {
                     celula.horario.text = String(rating)
                 }
@@ -86,7 +89,7 @@ class FinalTableViewController: UITableViewController {
         celula.nomeLocal.text = "Erro"
         celula.nomeEndereco.text = "Erro"
     celula.horario.text = "Erro"
-        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        celula.nomeImagem.image = UIImage(named: "lanchonete")
         celula.backgroundColor = UIColor.init(red: 255 / 255, green: 180 / 255, blue: 91 / 255, alpha: 1)
         celula.selectionStyle = .none
 

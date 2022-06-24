@@ -15,9 +15,11 @@ class CardTableViewCell: UITableViewCell {
         
         card.clipsToBounds = false
         card.layer.cornerRadius = 15
-        card.backgroundColor = UIColor.white
+//        card.backgroundColor = UIColor.lightGray
         
         card.translatesAutoresizingMaskIntoConstraints = false
+        
+//        nomeImagem.layer.cornerRadius = 30
         
         card.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
         card.heightAnchor.constraint(equalTo: heightAnchor, constant: -20).isActive = true

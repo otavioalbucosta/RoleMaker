@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ResultsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         celula.nomeLocal.text=localizacoes[indexPath.row].name
         celula.horario.text=String(localizacoes[indexPath.row].rating!)
         celula.nomeEndereco.text=localizacoes[indexPath.row].vicinity
-        celula.nomeImagem.image = UIImage(named: "Rectangle-1")
+        celula.nomeImagem.image = UIImage(named: "bar1")
         celula.backgroundColor = UIColor.init(red: 21 / 255, green: 28 / 255, blue: 58 / 255, alpha: 1)
         celula.selectionStyle = .none
         
